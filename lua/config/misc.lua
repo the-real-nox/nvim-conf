@@ -28,3 +28,5 @@ options = {
     end
     }
 }
+
+require('autoclose').setup{}
