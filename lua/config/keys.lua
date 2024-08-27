@@ -17,9 +17,9 @@ for i,v in ipairs({ 'n', 'v' }) do
 end
 
 -- modes
-vim.keymap.set('', '<A-c>', '<Esc>', sil)
-vim.keymap.set('', '<A-i>', '<Esc>:startinsert<CR>', sil)
-vim.keymap.set('', '<A-v>', '<Esc>:normal! v<CR>', sil)
+vim.keymap.set('', '<S-M-d>', '<Esc>', sil)
+vim.keymap.set('', '<S-M-i>', '<Esc>:startinsert<CR>', sil)
+vim.keymap.set('', '<S-M-v>', '<Esc>:normal! v<CR>', sil)
 vim.keymap.set('v', '<BS>', '<del>', sil)
 
 -- misc

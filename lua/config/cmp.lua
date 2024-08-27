@@ -1,5 +1,7 @@
 require("mason").setup()
-require("mason-lspconfig").setup()
+require("mason-lspconfig").setup {
+    ensure_installed = { 'lua_ls', 'pyright', 'html' }
+}
 local cmp = require('cmp')
 local lspconfig = require('lspconfig')
 local luasnip = require('luasnip')
