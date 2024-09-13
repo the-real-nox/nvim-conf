@@ -2,7 +2,8 @@ return {
 	{
 		"morhetz/gruvbox",
 		'nvim-treesitter/nvim-treesitter',
-        'm4xshen/autoclose.nvim'
+        'm4xshen/autoclose.nvim',
+        'pocco81/auto-save.nvim'
 	},
 	{
 		"nvim-neo-tree/neo-tree.nvim",
