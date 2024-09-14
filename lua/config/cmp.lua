@@ -2,9 +2,9 @@ require("mason").setup()
 require("mason-lspconfig").setup {
     ensure_installed = { 'lua_ls', 'pyright', 'html', 'yamlls' }
 }
-local cmp = require('cmp')
-local lspconfig = require('lspconfig')
-local luasnip = require('luasnip')
+        local cmp = require('cmp')
+        local lspconfig = require('lspconfig')
+        local luasnip = require('luasnip')
 
 cmp.setup({
 	snippet = {
@@ -33,8 +33,8 @@ cmp.setup({
 					luasnip.jump(-1)
 				else
 					fallback()
-				end
-			end, { 'i', 's' }),
+                end
+			end, { 'i', 's' }), 
 			['<Down>'] = cmp.mapping(function(fallback)
 				if cmp.visible() then
 					cmp.select_next_item()

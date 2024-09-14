@@ -1,6 +1,5 @@
 -- misc
 vim.opt.number = true
-vim.opt.wrap = false
 vim.opt.termguicolors = true
 
 -- tabs
