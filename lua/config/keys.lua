@@ -22,7 +22,16 @@ vim.keymap.set('', '<C-Bottom>', '<Esc>:wincmd j<CR>', sil)
 -- toggle neotree
 vim.cmd.Neotree("show")
 vim.keymap.set('', '<C-e>', '<Esc>:Neotree toggle<CR>', sil)
+-- fine-grained undo
+-- break undo-chaine
+vim.api.nvim_set_keymap('i', '<Space>', '<Space><C-g>u', { noremap = true })
+vim.api.nvim_set_keymap('i', ',', ',<C-g>u', { noremap = true })
+vim.api.nvim_set_keymap('i', '.', '.<C-g>u', { noremap = true })
+vim.api.nvim_set_keymap('i', ';', ';<C-g>u', { noremap = true })
+vim.api.nvim_set_keymap('i', '!', '!<C-g>u', { noremap = true })
+vim.api.nvim_set_keymap('i', '?', '?<C-g>u', { noremap = true })
 
+vim.api.nvim_set_keymap('', '<C-u>', 'normal! undo', sil)
 -- modes
 vim.keymap.set('', '<C-q>', function ()
     local quit = vim.fn.input('Quit all? ')
